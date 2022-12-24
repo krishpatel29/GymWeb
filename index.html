@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymWeb By Krish</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            font-family: 'Chivo Mono', monospace;
+            font-weight: 700;
+            background-color: #979ba627;
+        }
+
+        .container1 {
+            background-image: url(image/background.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+
+        }
+
+        .container1 li {
+            display: inline;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            font-family: 'Chivo Mono', monospace;
+            margin: 20px;
+            cursor: pointer;
+            font-weight: 900;
+            color: silver;
+        }
+
+        nav {
+            margin-top: 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px silver solid;
+            padding-top: 10px;
+            background-color: rgb(160, 158, 158);
+            animation: backchage1 6s infinite;
+        }
+
+        @keyframes backchage1 {
+            from {
+                background-color: rgba(34, 30, 30, 0.475);
+            }
+
+            to {
+                background-color: rgba(0, 0, 0, 0.751);
+            }
+        }
+
+        .logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 34%;
+            cursor: pointer;
+
+        }
+
+        nav i {
+            width: 20px;
+        }
+
+        .icon {
+            width: 30px;
+            margin-right: 30px;
+            cursor: pointer;
+        }
+
+        .container1 h2 {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            color: rgb(216, 212, 212);
+            cursor: pointer;
+            animation: color-change22 6s infinite;
+        }
+
+        @keyframes color-change22 {
+            40% {
+                color: rgb(221, 55, 55);
+            }
+
+            100% {
+
+                color: rgb(216, 212, 212);
+            }
+        }
+
+        .container1 span {
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            animation: color-change22 6s infinite;
+        }
+
+        .container1 h4 {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            color: rgb(230, 224, 224);
+            cursor: pointer;
+            font-weight: 900;
+        }
+
+        .home {
+            text-align: center;
+            margin-top: 83px;
+        }
+
+        p {}
+
+        .join {
+            width: 106px;
+            height: 47px;
+            font-size: 15px;
+            border-radius: 20px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .container2 {
+            background-image: url(image/background.jpg);
+            background-size: cover;
+            background-repeat: repeat-y;
+            margin: 0;
+            padding: 0;
+            height: 200vh;
+            background-color: rgba(0, 0, 0, 0.484);
+        }
+
+        .container2 h3 {
+            padding-left: 32px;
+            color: rgba(18, 17, 17, 0.85);
+
+            cursor: pointer;
+            font-weight: 900;
+            padding-top: 20px;
+            animation: join 3s 3s infinite;
+        }
+
+        @keyframes join {
+            100% {
+                text-decoration: underline;
+
+            }
+        }
+
+        .container2 h2 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 100px;
+            padding-right: 100px;
+
+        }
+
+        .pack1 {
+            margin: 30px;
+            padding: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.267);
+            font-weight: 900;
+            width: 600px;
+            border-radius: 30px;
+        }
+
+        .container2 span {
+            color: rgb(220, 32, 32);
+            cursor: pointer;
+        }
+
+        .program {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .program h4 {
+            background-color: rgba(220, 32, 32, 0.616);
+            color: black;
+            text-align: center;
+
+            padding: 10px;
+            font-style: oblique;
+            text-decoration: line-through;
+        }
+
+        .program h1 span {
+            animation: color-change1 3s infinite;
+        }
+
+        @keyframes color-change1 {
+            40% {
+                color: black;
+            }
+
+            100% {
+                color: rgb(220, 32, 32);
+            }
+        }
+
+        .program h1 {
+            animation: color-change2 3s infinite;
+            background-color: rgba(0, 0, 0, 0.063);
+            border-radius: 20px;
+        }
+
+        @keyframes color-change2 {
+            40% {
+                color: rgb(220, 32, 32);
+            }
+
+            100% {
+                color: black;
+            }
+        }
+
+        .writing1 {
+            display: flex;
+        }
+
+        .imagesetup img {
+            width: 300px;
+            height: 300px;
+            margin-left: 200px;
+            margin-top: 60px;
+        }
+
+        .card-body {
+            color: rgb(0, 0, 0);
+            border: 2px white solid;
+            margin: 20px 10px 0 10px;
+            padding: 20px;
+            font-family: 'Chivo Mono', monospace;
+            background-color: rgba(233, 238, 243, 0.781);
+            border-radius: 10px;
+        }
+
+        .card-title {
+            font-size: large;
+            color: rgb(220, 32, 32);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="nav1">
+            <!-- <img class="logo" src="image/logo.png" alt=""> -->
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Details</li>
+                    <li>Support</li>
+                    <li>Contact</li>
+                </ul>
+                <img class="icon" src="image/account.png" alt="">
+            </nav>
+        </div>
+        <div class="home">
+            <img class="logo" src="image/logo.png" alt="">
+            <h2>Welcome To <span>Gym</span>,<span>Yoga</span> & <span>Exercise Center</span></h2>
+            <h4>If you want something you've never had, you must be willing to do something you've never done</h4>
+            <button class="join">Join</button>
+        </div>
+    </div>
+    <div class="container2">
+        <h2></h2>
+        <h3>Joining Fees</h3>
+        <div class="cards">
+            <div class="col-sm-6">
+                <div class="card pack1">
+                    <div class="card-body">
+                        <h4 class="card-title">Package 1</h4>
+                        <p class="card-text">This is basic pack.It will cost <span>599/-</span> per
+                            month<br>-Features<br>1)Access to all chest,leg Equipments<br>2)Ac hall<br>3)Group Training
+                        </p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card pack1">
+                    <div class="card-body">
+                        <h4 class="card-title">Package 2</h4>
+                        <p class="card-text">This is professional's pack.It will cost <span>799/-</span> per
+                            month<br>-Features<br>1)Access to all types of Equipments<br>2)Ac hall<br>3)Personal
+                            Training</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="program">
+            <h4>WRKT FITNESS PROGRAMS</h4>
+            <h1><span>INDIVIDUAL</span> PROGRAMS THAT <br> MATCH YOUR WISHES AND YOUR <span>CONDITION.</span></h1>
+        </div>
+        <div class="card text-center">
+            <div class="card-header">
+                Featured
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Handicap Pack(Special program)</h5>
+                <p class="card-text">This is Handicap's pack.It will cost <span>399/-</span> per
+                    month<br>-Features<br>1)Limited Equipments as per injuries<br>2)Seprate hall for them<br>3)Personal
+                    Trainer<br>4)Diet plans<br>5)Yearly free mediacl Check-Up</p>
+                <a href="#" class="btn btn-primary">Join</a>
+            </div>
+            <div class="card-body packs1">
+                <h5 class="card-title">Women's Pack(Special program)</h5>
+                <p class="card-text">This is Handicap's pack.It will cost <span>699/-</span> per
+                    month<br>-Features<br>1)Full Access to Equipments<br>2)Seprate hall for them<br>3)Woman
+                    Trainer<br>4)Diet plans<br>5)Yearly free mediacl Check-Up</p>
+                <a href="#" class="btn btn-primary">Join</a>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fa fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/krishpa63691126"
+                    role="button"><i class="fa fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="" role="button"><i class="fa fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/krishpatel029/"
+                    role="button"><i class="fa fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/krish-patel-a2a81b247" role="button"><i
+                        class="fa fa-linkedin"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/krishpatel29"
+                    role="button"><i class="fa fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-white" href="https://github.com/krishpatel29">Krish</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</body>
+
+</html>
